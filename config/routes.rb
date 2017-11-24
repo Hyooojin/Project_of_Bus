@@ -1,22 +1,8 @@
 Rails.application.routes.draw do
-  root 'bus#index'
-  get 'bus/index'
-  
-  get 'bus/search' => 'bus#search'
-  
-  get 'user/index'
+  get '/keyboard' => 'bus#keyboard'
 
-  get 'user/new'
+  put '/message' => 'bus#message'
 
-  get 'user/create'
-
-  get 'user/show'
-
-  get 'user/login'
-
-  get 'user/login_process'
-
-  get 'user/logout'
 
   
 

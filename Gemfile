@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+gem 'httparty'
+gem 'rest-client'
+gem 'nokogiri'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'

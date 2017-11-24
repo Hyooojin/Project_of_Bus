@@ -1,13 +1,19 @@
 class BusController < ApplicationController
-  def index
+  def keyboard
+    keyboard = {
+      type: "text"
+    }
+    render json: keyboard
   end
-  
-  def search
-    @busno = params[:busno]
+
+  def message
+    user_msg = params[:content]
     
-    show_message
-  end
-  def show_message
-    puts "test"
+    result = {
+      "message" => {
+        "text"=>user_msg
+      }
+    }
+    render json: message
   end
 end
